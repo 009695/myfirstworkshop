@@ -3,6 +3,8 @@ Nutanix Marvellous Workshop
 
 In this workshop you'll learn new exciting content.
 
+Open up this RST file to reveal the syntax and parameters of the example sections below.
+
 Section 1
 +++++++++
 Wouldn't it be good to show something in *italics*? Well, that was straightforward.
@@ -23,10 +25,11 @@ Here's a nice way to make a ``command instruction`` stand out.
 
 An additional library is defined in the **conf.py** file to make special characters available, for example:
 
-:fa:`bars`, :fa:`check`, :fa:`square-o`
+:fa:`bars` To show bars
 
-:fa: `arrow` 
+:fa:`check` To show a tick
 
+:fa:`square-o` To show a selection box
 
 
 Section 2
@@ -52,13 +55,13 @@ Well, that was easy.
 
 Section 3
 +++++++++
-At times you may want to point out something of note, an advisory or something that simply stands out.
+At times you may want to point out something of note, an advisory or need something that simply stands out.
 
 .. note:: Please ensure you've installed the correct version of blah before proceeding.
 
-.. seealso:: There's another page you can click.
+.. seealso:: There's another page you can click for more information.
 
-.. warning:: A little more emphasis using this syntax.
+.. warning:: A little more emphasis using this.
 
 
 Quite simple when you know the syntax.
@@ -95,5 +98,33 @@ You may want to embed a link to a Google Sheet as you may have seen in recent Ne
    <iframe src="https://docs.google.com/spreadsheets/d/1I7eLudDdxvKQDYvTzLFAXVQaGFYUl4LSVFJDuKx0lEI/edit?usp=sharing" style="position: relative; height: 400px; width: 98%; border: none"></iframe>
 
 
+Section 6
++++++++++
+Inserting code examples may be required especially if you would the content to look exact, here's an example taken from a Calm Workshop:
 
-That covers it.
+
+.. code-block:: bash
+
+     #!/bin/bash
+     set -ex
+     # -*- Install httpd and php
+     sudo yum update -y
+     sudo yum -y install epel-release
+     sudo rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+     sudo yum install -y httpd php56w php56w-mysql
+
+     echo "<IfModule mod_dir.c>
+             DirectoryIndex index.php index.html index.cgi index.pl index.php index.xhtml index.htm
+     </IfModule>" | sudo tee /etc/httpd/conf.modules.d/dir.conf
+
+     echo "<?php
+     phpinfo();
+     ?>" | sudo tee /var/www/html/info.php
+     sudo systemctl restart httpd
+     sudo systemctl enable httpd
+
+
+
+
+
+That covers many of the basics.
