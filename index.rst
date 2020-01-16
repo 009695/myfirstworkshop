@@ -26,5 +26,7 @@
 
 A brief online guide to provide examples of formatting and creating sections.
 
+This has been created separately from the install guide so you can clone, edit and play around with it.
+
 
 *All comments and updates welcome, please e-mail darren@nutanix.com*
