@@ -23,6 +23,8 @@ RAW HTML code can be included if necessary.
 
 Here's a nice way to make a ``command instruction`` stand out.
 
+|
+
 An additional library is defined in the **conf.py** file to make special characters available, for example:
 
 :fa:`bars` To show bars
@@ -30,6 +32,24 @@ An additional library is defined in the **conf.py** file to make special charact
 :fa:`check` To show a tick
 
 :fa:`square-o` To show a selection box
+
+:fa:`arrow-left` To show a left-arrow
+
+:fa:`arrow-right` To show a right-arrow
+
+:fa:`arrow-up` To show a up-arrow
+
+:fa:`arrow-down` To show a down-arrow
+
+|
+
+How about a nice checklist?
+
+|o| Make the trainer a hot drink
+
+|x| Ask questions
+
+|x| Tidy away classroom when finished
 
 
 Section 2
@@ -44,11 +64,11 @@ A description of something that would be benefit from a bullet list:
 
 Numbered bullets can have their place too:
 
-#   Item 1
+#.   Item 1
 
-#   Item 2
+#.   Item 2
 
-#   Item 3
+#.   Item 3
 
 
 Well, that was easy.
@@ -70,11 +90,11 @@ Section 4
 +++++++++
 It's time to include a graphic. This could be from screenshots you've been gathering or maybe you'd like to share something inspirational to liven the workshop up. Either way it's quite simple.
 
-.. note:: Make sure you copy the image into the directory (or Folder for you Windows people).
+.. note:: Make sure you copy the image into the directory (or Folder for you Windows people) of your local repository, perhaps use a sub-directory called **images** too.
 
 .. figure:: images/se-bootcamp-motivate.png
 
-This will display the image in its native resolution so it may be worth checking the dimensions and reducing down if necessary. As you can see this is large.
+This will display the image in its native resolution so it may be worth checking the dimensions and reducing down if necessary. As you can see this is large :fa:`frown-o`.
 
 If you'd like to constrain the image width then additional height and width parameters can be included in the RST file, you can specify one or both. See the source of this file and look for the `width` parameter.
 
