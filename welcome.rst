@@ -1,4 +1,4 @@
-Nutanix Marvellous Workshop
+Nutanix's totally spiffing Workshop
 ===========================
 
 In this workshop you'll learn new exciting content.
